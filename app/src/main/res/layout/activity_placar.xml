@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34dt"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="TIME A" />
+
+    <TextView
+        android:id="@+id/tvTimeB"
+        android:layout_width="46dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="34dt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeA"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeA"
+        tools:text="TIME B" />
+
+    <TextView
+        android:id="@+id/tvPlacarTimeB"
+        android:layout_width="53dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlacarTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPlacarTimeA"
+        app:layout_constraintTop_toTopOf="@+id/tvPlacarTimeA"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/bt3PontosTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="3 pontos "
+        app:layout_constraintEnd_toStartOf="@+id/bt3PontosTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <Button
+        android:id="@+id/bt3PontosTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="8dp"
+        android:text="3 pontos "
+        app:layout_constraintBottom_toBottomOf="@+id/bt3PontosTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt3PontosTimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt3PontosTimeA" />
+
+    <Button
+        android:id="@+id/bt2PontosTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="2 pontos"
+        app:layout_constraintEnd_toStartOf="@+id/bt2PontosTimeB"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3PontosTimeA" />
+
+    <Button
+        android:id="@+id/bt2PontosTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2 pontos"
+        app:layout_constraintBottom_toBottomOf="@+id/bt2PontosTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt2PontosTimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt2PontosTimeA" />
+
+    <Button
+        android:id="@+id/bt1PontoTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1 ponto"
+        app:layout_constraintEnd_toStartOf="@+id/bt1PontoTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2PontosTimeA" />
+
+    <Button
+        android:id="@+id/bt1PontoTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1 ponto"
+        app:layout_constraintBottom_toBottomOf="@+id/bt1PontoTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt1PontoTimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt1PontoTimeA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1PontoTimeA" />
+
+    <TextView
+        android:id="@+id/tvPlacarTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="64dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/bt3PontosTimeA"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlacarTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="0" />
+
+</android.support.constraint.ConstraintLayout>
